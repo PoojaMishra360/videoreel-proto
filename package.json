@@ -1,0 +1,36 @@
+{
+  "name": "videoreel-proto",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen": "tsx src/cli.ts",
+    "video:render": "node src/render-saved-script.js",
+    "video:smoke": "node src/render-smoke.js",
+    "ui": "node src/ui-server.js",
+    "ui:preview": "node -e \"process.env.AUTH_PREVIEW='true'; import('./src/ui-server.js')\"",
+    "db:setup": "node src/db-setup.js",
+    "auth:smoke": "node src/auth-smoke.js",
+    "generation:smoke": "node src/generation-smoke.js",
+    "storage:check": "node src/r2-check.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1169.0",
+    "@aws-sdk/s3-request-presigner": "^3.1169.0",
+    "@google/genai": "^1.0.0",
+    "@remotion/bundler": "^4.0.543",
+    "@remotion/renderer": "^4.0.543",
+    "dotenv": "^16.4.5",
+    "mongodb": "^7.8.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.543",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

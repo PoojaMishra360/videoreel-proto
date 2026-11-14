@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1100" viewBox="0 0 2000 1100" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+    <marker id="r" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f87171"/></marker>
+  </defs>
+  <rect width="2000" height="1100" fill="#0f172a"/>
+  <text x="1000" y="70" text-anchor="middle" font-size="46" font-weight="700" fill="#fff">VideoReel: AI Video Generation Pipeline</text>
+  <text x="1000" y="115" text-anchor="middle" font-size="26" fill="#94a3b8">One topic in, finished educational MP4 out</text>
+
+  <g stroke="#94a3b8" stroke-width="4" fill="none" marker-end="url(#a)">
+    <path d="M320,235 H440"/><path d="M700,235 H820"/><path d="M1080,235 H1200"/><path d="M1460,235 H1580"/>
+    <path d="M1710,300 V340 H190 V380"/>
+    <path d="M320,445 H440"/><path d="M700,445 H820"/>
+    <path d="M950,510 V600"/>
+    <path d="M950,830 V860 H190 V880"/>
+    <path d="M320,945 H440"/><path d="M700,945 H820"/><path d="M1080,945 H1200"/>
+  </g>
+  <path d="M1000,1010 L1000,1040 H1760 V800" stroke="#f87171" stroke-width="4" fill="none" stroke-dasharray="10 8" marker-end="url(#r)" opacity="0"/>
+
+  <g text-anchor="middle" fill="#fff">
+    <!-- Row 1 -->
+    <rect x="60" y="170" width="260" height="130" rx="18" fill="#334155" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="190" y="215" font-size="26" font-weight="700">User input</text><text x="190" y="248" font-size="20" fill="#e2e8f0">Topic, format,</text><text x="190" y="274" font-size="20" fill="#e2e8f0">length, level, voice</text>
+    <rect x="440" y="170" width="260" height="130" rx="18" fill="#b91c1c" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="570" y="215" font-size="26" font-weight="700">0 Moderation</text><text x="570" y="248" font-size="20" fill="#e2e8f0">Safety check</text><text x="570" y="274" font-size="20" fill="#e2e8f0">blocked = no charge</text>
+    <rect x="820" y="170" width="260" height="130" rx="18" fill="#1d4ed8" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="950" y="215" font-size="26" font-weight="700">1 Intake</text><text x="950" y="248" font-size="20" fill="#e2e8f0">Brief, audience,</text><text x="950" y="274" font-size="20" fill="#e2e8f0">word budget</text>
+    <rect x="1200" y="170" width="260" height="130" rx="18" fill="#1d4ed8" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="1330" y="215" font-size="26" font-weight="700">2 Research</text><text x="1330" y="248" font-size="20" fill="#e2e8f0">Gemini + Tavily</text><text x="1330" y="274" font-size="20" fill="#e2e8f0">facts and sources</text>
+    <rect x="1580" y="170" width="260" height="130" rx="18" fill="#1d4ed8" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="1710" y="215" font-size="26" font-weight="700">3 Script</text><text x="1710" y="248" font-size="20" fill="#e2e8f0">Hook, key points,</text><text x="1710" y="274" font-size="20" fill="#e2e8f0">example, recap</text>
+
+    <!-- Row 2 -->
+    <rect x="60" y="380" width="260" height="130" rx="18" fill="#1d4ed8" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="190" y="425" font-size="26" font-weight="700">4 Fact-check</text><text x="190" y="458" font-size="20" fill="#e2e8f0">Claims vs sources,</text><text x="190" y="484" font-size="20" fill="#e2e8f0">remove unsupported</text>
+    <rect x="440" y="380" width="260" height="130" rx="18" fill="#1d4ed8" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="570" y="425" font-size="26" font-weight="700">5 Storyboard</text><text x="570" y="458" font-size="20" fill="#e2e8f0">6-15 scenes with</text><text x="570" y="484" font-size="20" fill="#e2e8f0">text and visual type</text>
+    <rect x="820" y="380" width="260" height="130" rx="18" fill="#1d4ed8" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="950" y="425" font-size="26" font-weight="700">6 Style guide</text><text x="950" y="458" font-size="20" fill="#e2e8f0">Palette, art style,</text><text x="950" y="484" font-size="20" fill="#e2e8f0">seed for consistency</text>
+
+    <!-- Parallel -->
+    <rect x="400" y="600" width="1100" height="230" rx="24" fill="none" stroke="#a78bfa" stroke-width="3"/>
+    <text x="420" y="632" text-anchor="start" font-size="22" font-weight="700" fill="#c4b5fd">Parallel, per scene</text>
+    <rect x="440" y="660" width="260" height="130" rx="18" fill="#7c3aed" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="570" y="705" font-size="26" font-weight="700">7a Images</text><text x="570" y="738" font-size="20" fill="#e2e8f0">Gemini / Imagen</text><text x="570" y="764" font-size="20" fill="#e2e8f0">with style guide</text>
+    <rect x="820" y="660" width="260" height="130" rx="18" fill="#7c3aed" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="950" y="705" font-size="26" font-weight="700">7b Diagrams</text><text x="950" y="738" font-size="20" fill="#e2e8f0">Templates, SVG,</text><text x="950" y="764" font-size="20" fill="#e2e8f0">Mermaid</text>
+    <rect x="1200" y="660" width="260" height="130" rx="18" fill="#7c3aed" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="1330" y="705" font-size="26" font-weight="700">7c Voice-over</text><text x="1330" y="738" font-size="20" fill="#e2e8f0">ElevenLabs +</text><text x="1330" y="764" font-size="20" fill="#e2e8f0">word timestamps</text>
+
+    <!-- Row 4 -->
+    <rect x="60" y="880" width="260" height="130" rx="18" fill="#1d4ed8" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="190" y="925" font-size="26" font-weight="700">8 Timeline</text><text x="190" y="958" font-size="20" fill="#e2e8f0">Audio timing sets</text><text x="190" y="984" font-size="20" fill="#e2e8f0">scene lengths</text>
+    <rect x="440" y="880" width="260" height="130" rx="18" fill="#1d4ed8" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="570" y="925" font-size="26" font-weight="700">9 Render</text><text x="570" y="958" font-size="20" fill="#e2e8f0">Remotion + FFmpeg</text><text x="570" y="984" font-size="20" fill="#e2e8f0">MP4, SRT, thumbnail</text>
+    <rect x="820" y="880" width="260" height="130" rx="18" fill="#1d4ed8" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="950" y="925" font-size="26" font-weight="700">10 QA</text><text x="950" y="958" font-size="20" fill="#e2e8f0">Length, blank frames,</text><text x="950" y="984" font-size="20" fill="#e2e8f0">captions, loudness</text>
+    <rect x="1200" y="880" width="300" height="130" rx="18" fill="#059669" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="1350" y="925" font-size="26" font-weight="700">Preview + export</text><text x="1350" y="958" font-size="20" fill="#e2e8f0">Edit scenes, download</text><text x="1350" y="984" font-size="20" fill="#e2e8f0">credits committed</text>
+
+    <!-- Failure -->
+    <rect x="1580" y="640" width="360" height="150" rx="18" fill="#b91c1c" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="1760" y="685" font-size="26" font-weight="700">On failure</text><text x="1760" y="720" font-size="20" fill="#e2e8f0">Retry, fallback provider,</text><text x="1760" y="746" font-size="20" fill="#e2e8f0">then auto-refund credits</text>
+    <text x="1760" y="830" font-size="20" fill="#94a3b8">Every stage saves its output,</text><text x="1760" y="856" font-size="20" fill="#94a3b8">so jobs resume, not restart.</text>
+  </g>
+</svg>
